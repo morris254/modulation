@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="me.macron.podcastplayer"
+      android:versionCode="1"
+      android:installLocation="auto" android:versionName="1.0.0.124109">
+
+    <uses-sdk android:minSdkVersion="7"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <service android:name=".PodcastService" />
+    
+        <activity android:name=".PodcastPlayer"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PodcastList"
+                  >
+        </activity>        
+        <activity android:name=".PodcastPlayback"
+                   android:theme="@android:style/Theme.NoTitleBar">
+        </activity>        
+        <activity android:name=".NoPodcasts"
+                  android:label="@string/nopodcasts_title">
+        </activity>        
+
+    </application>
+</manifest>

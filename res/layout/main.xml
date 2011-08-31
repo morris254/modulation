@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView android:contentDescription="List of podcast shows" android:id="@android:id/list" android:layout_weight="1" android:layout_height="0dip" android:layout_width="match_parent"></ListView>
+    <LinearLayout android:contentDescription="Now playing" android:paddingLeft="4dip" android:paddingTop="0dip" android:id="@+id/nowPlaying" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="50dip" android:orientation="vertical" android:background="@drawable/now_playing" android:clickable="true" android:focusable="true">
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nowPlayingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:text="Now Playing Title"
+        android:textColor="@color/title_color" android:gravity="bottom">
+      </TextView>
+      
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nowPlayingAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:text="Now Playing Album"
+        android:textColor="@color/artist_color" android:gravity="top">
+      </TextView>    
+    </LinearLayout>
+</LinearLayout>

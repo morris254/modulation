@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PodcastPlayer!</string>
+    <string name="app_name">Modulation</string>
+    <string name="local_service_id">Service ID</string>
+    <string name="paused">Paused</string>
+    <string name="nosdcard">No SD Card</string>
+    <plurals name="episode_counter">
+       <item quantity="one">1 episode</item>
+       <item quantity="other">%d episodes</item>
+    </plurals>
+    <string name="nopodcasts">No podcasts found.\n\nPlease synchronize podcasts to your device then try again.</string>
+    <string name="nopodcasts_title">No podcasts found</string>
+    <string name="syncapp_1">http://www.doubletwist.com</string>
+    <string name="syncapp_2">http://www.winamp.com</string>
+    <string name="syncapp_3">http://www.mediamonkey.com</string>
+    <string name="service_disconnected">Playback has been interrupted</string>
+    <string name="updating_podcasts">Loading podcasts...</string>
+    <string name="about_label">About</string>
+	<string name="about_shortcut">a</string>
+	<string name="about_text">\
+Modulation Podcast Player for Android\n\nSupport: modulation@macron.me\n\n
+Web: http://macron.me/modulation
+	</string>
+</resources>

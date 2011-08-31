@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Modulation</string>
+    <string name="paused">一時停止</string>
+    <string name="nosdcard">SD Card検出できません</string>
+    <plurals name="episode_counter">
+       <item quantity="other">%d件</item>
+    </plurals>
+    <string name="service_disconnected">再生が中断されました</string>
+    <string name="updating_podcasts">ポッドキャストを読み込み中...</string>
+	<string name="about_text">\
+Modulation Podcast Player for Android\n\nサポート：  modulation@macron.me\n\n
+Web： http://macron.me/modulation
+	</string>    
+</resources>

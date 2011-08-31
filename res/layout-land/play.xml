@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:padding="16dip"
+  android:orientation="vertical" 
+  android:layout_gravity="center">
+  
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" 
+      android:padding="8dip"
+      android:gravity="top">
+
+    <ImageView 
+      android:id="@+id/playbackArtwork" 
+      android:layout_width="72dip" 
+      android:layout_height="72dip"
+      android:layout_gravity="center">
+    </ImageView>  
+  
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" 
+      android:orientation="vertical"
+      android:paddingLeft="8dip">
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playbackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textColor="@color/title_color">      
+      </TextView>
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playbackArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Album"
+        android:textSize="16sp"
+        android:textColor="@color/title_color">
+      </TextView>
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playbackAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Album"
+        android:textSize="16sp"
+        android:textColor="@color/title_color">
+      </TextView>
+     
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playbackDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:text="Date"
+        android:textSize="14sp"
+        android:textColor="@color/artist_color">
+      </TextView>
+  </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1" 
+    android:orientation="vertical"
+    android:padding="8dip" 
+    android:gravity="bottom">
+    <SeekBar 
+      android:id="@+id/playbackProgress"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent">
+    </SeekBar>
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="22dip" 
+      android:orientation="horizontal">      
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playbackTime"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="0:00"
+        android:textSize="14sp"
+        android:textColor="@color/title_color">      
+      </TextView>
+      <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playbackDuration"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="44:06"
+        android:textSize="14sp"
+        android:textColor="@color/title_color">
+      </TextView>
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/linearLayout1" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:layout_gravity="center_horizontal|bottom" 
+      android:orientation="horizontal" 
+      android:background="@drawable/buttons_background">
+        <ImageView android:id="@+id/rewindButton" android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:src="@drawable/rewind_button_default" android:background="@null" android:layout_gravity="right|center_vertical"></ImageView>
+        <ImageView android:id="@+id/playPauseButton" android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:src="@drawable/pause_button_default" android:layout_gravity="center|center_vertical|left"></ImageView>
+        <ImageView android:id="@+id/fforwardButton" android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:src="@drawable/fforward_button_default" android:background="@null" android:layout_gravity="left|center_vertical"></ImageView>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
