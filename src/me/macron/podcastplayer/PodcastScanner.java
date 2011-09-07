@@ -159,7 +159,7 @@ public class PodcastScanner {
 
       while (traverseFolders.size() != 0) {
          folderName = traverseFolders.remove(0);
-         Log.d(TAG, "traverse " + folderName);
+         //Log.d(TAG, "traverse " + folderName);
          dir = new File(folderName);
          File[] fileList = dir.listFiles();
          if (fileList != null) {
