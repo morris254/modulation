@@ -131,9 +131,13 @@ public class MediaMetaData {
          
          mReleaseDate = sdf.getCalendar().getTime();
       } catch (ParseException e) {
-         // Fallback to joda, which has an initialization penalty around 0.5 seconds...
-         DateTimeFormatter parser2 = ISODateTimeFormat.dateTimeNoMillis();
-         mReleaseDate = parser2.parseDateTime(releaseDate).toDate();
+         try {
+            // Fallback to joda, which has an initialization penalty around 0.5 seconds...
+            DateTimeFormatter parser2 = ISODateTimeFormat.dateTimeNoMillis();
+            mReleaseDate = parser2.parseDateTime(releaseDate).toDate();
+         } catch (IllegalArgumentException ae) {
+            // Bad date format, don't set the release date
+         }
       }
   }
    
